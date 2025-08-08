@@ -23,8 +23,19 @@ Route::get('/foo', function () {
 Route::get('/clearenv', function () {
     \Artisan::call('config:cache');
     \Artisan::call('config:clear');
-
     dd("Cache is cleared");
+});
+
+Route::get('/clear', function () {
+    \Artisan::call('config:cache');
+    \Artisan::call('cache:clear');
+    \Artisan::call('view:clear');
+    \Artisan::call('route:clear');
+    \Artisan::call('clear-compiled');
+    \Artisan::call('clear-compiled');
+	\Artisan::call('config:clear');
+
+    dd("Clear cache");
 });
 
 Route::get('/installation_form', function()
