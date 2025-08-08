@@ -26,9 +26,8 @@ body#app-layout.nav-sm a>.profilepic{
 			 height:35px;
 			}
 .profilepic{
-			 width:230px; 
-			 height:70px;
-			}
+	height:80px;
+}
 div{word-wrap:break-word;}
 .has-feedback .form-control {
     padding-right: 14px !important;
