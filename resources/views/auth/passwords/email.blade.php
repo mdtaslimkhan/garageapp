@@ -37,8 +37,7 @@
 			
 			<div class="loginlogo" style="">
 				 <a href="" >
-			  <img src="{{ URL::asset('/general_setting/'.getLogoSystem())}}"
-			   width="230px" height="70px"></a>
+			  <img src="{{ URL::asset('/general_setting/'.getLogoSystem())}}" ></a>
 			</div>
 			
 			<section class="login_content">

@@ -54,7 +54,7 @@
 			<div class="loginlogo" style="">
 				 <a href="" >
 			  <img src="{{ URL::asset('/general_setting/'.getLogoSystem())}}"
-			   width="230" height="70" alt="Garage Management System" style="margin-top:20px;"></a>
+			   alt="Garage Management System" style="margin-top:20px;"></a>
 			</div>
 			
 			<section class="login_content">
