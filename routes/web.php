@@ -13,6 +13,20 @@
 
 Auth::routes();
 
+Route::get('/foo', function () {
+   $targetFolder = $_SERVER['DOCUMENT_ROOT'].'/storage/app/public';
+        $linkFolder = $_SERVER['DOCUMENT_ROOT'].'/public/storage';
+        symlink($targetFolder,$linkFolder);
+        echo 'Symlink process successfully completed';
+});
+
+Route::get('/clearenv', function () {
+    \Artisan::call('config:cache');
+    \Artisan::call('config:clear');
+
+    dd("Cache is cleared");
+});
+
 Route::get('/installation_form', function()
 {
     return view('Installer.index');
